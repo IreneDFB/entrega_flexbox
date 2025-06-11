@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  background-image: url('https://images.unsplash.com/photo-1548504778-b14db6c34b04?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f2ecec;
+}
+header,
+footer {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+}
+h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #ddd;
+}
+.navbar {
+  background-color: #222;
+  padding: 1em 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffb6c1;
+}
+.header-icons {
+  position: absolute;
+  right: 1em;
+  display: flex;
+  gap: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-icons a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-icons a:hover {
+  color: #ffb6c1;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.content {
+  flex: 2;
+  background: #fff0f5;
+  padding: 2em;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgb(245, 243, 243);
+  background-image: url(https://plus.unsplash.com/premium_photo-1664300427196-a351c77e1173?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  padding: 2em 0;
+}
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.producto h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+.producto p {
+  font-size: 0.9em;
+  color: #555;
+}
+.categoria {
+  margin-bottom: 3em;
+  text-align: center;
+}
+.categoria h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button.btn {
+  background: #fb91a4;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  margin-top: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button.btn:hover {
+  background: #c2185b;
+}
+footer {
+  footer {
+    margin-top: auto;
+    font-size: 0.9rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover {
+    color: #ffb6c1;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1em;
+  }
+  .content,
+  .sidebar {
+    flex: 1 1 100%;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+.productos {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.categoria {
+  margin-bottom: 1em;
+}
+.categoria h2 {
+  font-size: 1.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  margin-bottom: 1em;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
